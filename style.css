@@ -114,3 +114,37 @@ hero h1 {
     color: #000;
 }
 
+
+.card-list {
+    display: flex;    /*Gør containeren fleksibel så børnen kan styres nemt*/
+    flex-direction: column; /*mobile first elementerne står lodret som en kolonne*/
+    gap: 1rem;              /*luft mellem kortene*/
+}
+
+
+.campus-list,
+.events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+
+
+.card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+
+.card h3 {    /*overskrifter i cards*/
+    margin: 0.5rem 0;
+}
+
