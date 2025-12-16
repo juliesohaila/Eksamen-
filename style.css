@@ -18,8 +18,9 @@ body {
 /*NAVBAR – MOBILE FIRST*/
 .navbar {
     background-color: #000;
-    color: #fff;
-    padding: 1rem 1.5rem;
+    color: #FFCC00;
+    padding: 0.6rem 1.5rem;
+
 
     display: flex;
     justify-content: space-between;
@@ -62,9 +63,10 @@ body {
 }
 
 .nav-links a {
-    color: #fff;
+    color: #FFCC00;
     text-decoration: none;
 }
+
 
 
 /*HERO*/
@@ -230,8 +232,163 @@ body {
 }
 
 @media (min-width: 768px) {
+    .page-hero-text h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .page-hero {
+        height: 260px; /* desktop – ikke for dominerende */
+    }
+}
+
+
+@media (min-width: 768px) {
     .facility-list {
         flex-direction: row;
+    }
+}
+
+
+
+/* UNDERSIDE HERO køge  – mobile first */
+.page-hero {
+    position: relative;
+}
+
+.page-hero img {
+    width: 100%;
+    display: block;
+}
+
+.page-hero-text {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;  /*teksten er nu i højre side på cover billedet*/
+    color: #fff;
+    max-width: 80%;
+}
+
+.page-hero-text h1 {
+    font-family: Poppins, sans-serif;
+    font-size: 1.6rem;
+}
+
+/*justere cover billedets størrelse*/
+@media (min-width: 768px) {
+    .page-hero {
+        height: 400px;   /*kan gøre billedet højere*/
+        overflow: hidden;
+    }
+
+    .page-hero img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
+/* KØGE CAMPUS – mobile first */
+.campus-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.campus-image img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+
+@media (min-width: 768px) {
+    .campus-content {
+        flex-direction: row;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .campus-text {
+        flex: 1;
+    }
+
+    .campus-image {
+        flex: 1;
+    }
+}
+
+
+
+.activity-list {     /*aktivitet og workshop listen*/
+    margin: 1rem 0 2rem;
+    padding-left: 1.25rem;
+}
+
+.activity-list li {
+    margin-bottom: 0.5rem;
+}
+
+
+.section h2 {
+    text-align: center;
+}
+
+
+.page-hero {
+    position: relative;
+}
+
+.page-hero::after { /*her kommer der mørkt overlay*/
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 0;
+}
+
+.page-hero-text {
+    position: absolute;
+    z-index: 1;  /*her er teksten oven på layout*/
+}
+
+
+
+
+/* FACILITETER – mobile first */
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 pr række på mobil */
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.facility-item {
+    text-align: center;
+}
+
+.facility-item img {
+    width: 64px;
+    height: auto;
+    margin-bottom: 0.75rem;
+}
+
+.facility-item p {
+    font-size: 0.95rem;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+    .facilities-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 pr række */
+    }
+
+    .facility-item img {
+        width: 72px;
     }
 }
 
