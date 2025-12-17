@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +8,13 @@
 </head>
 
 <body>
+
 <nav class="navbar">
     <div class="logo">CONNECTED STARTERS</div>
 
-    <!-- Burger checkbox (skjult) -->
     <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="burger">☰</label>
 
-    <!-- Burger icon -->
-    <label for="menu-toggle" class="burger">
-        ☰
-    </label>
-
-    <!-- Menu links -->
     <ul class="nav-links">
         <li><a href="#">Forside</a></li>
         <li><a href="#">Find dit campus</a></li>
@@ -28,16 +23,26 @@
     </ul>
 </nav>
 
+<!-- FORSIDE HERO -->
+<header class="hero-home">
+    <div class="hero-content">
 
-<!--Hero-->
-<header class="hero">
-    <h1>Udvikl idéer på tværs af Zealand</h1>
-    <p>Connected Starters giver studerende mulighed for at engagere sig
-        i iværksætteri gennem et kreativt og støttende miljø.</p>
-    <a href="#" class="btn-primary">Bliv medlem</a>
+        <div class="hero-text">
+            <h1>Udvikl idéer på tværs af Zealand</h1>
+            <p>
+                Connected Starters giver studerende mulighed for at engagere sig
+                i iværksætteri gennem et kreativt og støttende miljø.
+            </p>
+            <a href="#" class="btn-primary">Bliv medlem</a>
+        </div>
+
+        <div class="hero-icon">
+            <img src="icons/pære.svg" alt="Idé pære">
+        </div>
+
+    </div>
 </header>
 
-<!--Find dit campus-->
 <section class="section">
     <h2>Find dit Campus</h2>
 
@@ -45,7 +50,7 @@
         <article class="card">
             <img src="images/køge%20forside.jpg" alt="Køge campus">
             <h3>Køge</h3>
-            <a href="#" class="btn-secondary">Se faciliteter</a>
+            <a href="køge.html" class="btn-secondary">Se faciliteter</a>
         </article>
 
         <article class="card">
@@ -54,7 +59,6 @@
             <a href="#" class="btn-secondary">Se faciliteter</a>
         </article>
 
-
         <article class="card">
             <img src="images/slagelse forside.png" alt="Slagelse campus">
             <h3>Slagelse</h3>
@@ -62,29 +66,42 @@
         </article>
     </div>
 </section>
-    <!-- Kommende events -->
-    <section class="section">
-        <h2>Kommende events</h2>
 
-        <div class="card-list">
-            <article class="card">
-                <img src="images/workshops.jpg" alt="Workshop">
-                <h3>Workshops</h3>
-                <a href="#" class="btn-secondary">Læs mere</a>
-            </article>
 
-            <article class="card">
-                <img src="images/coaching.jpg" alt="Coaching">
-                <h3>Coachingforløb</h3>
-                <a href="#" class="btn-secondary">Læs mere</a>
-            </article>
+<section class="section">
+    <h2>Workshops & aktiviteter</h2>
 
-            <article class="card">
-                <img src="images/netværk.jpg" alt="Netværk">
-                <h3>Netværk</h3>
-                <a href="#" class="btn-secondary">Læs mere</a>
-            </article>
-        </div>
+    <p>
+        På Connected Starters kan du deltage i en række aktiviteter,
+        der styrker dine innovative kompetencer:
+    </p>
+
+    <ul class="activity-list">
+        <li>Workshops om digital udvikling</li>
+        <li>Praktiske hands-on sessioner</li>
+        <li>Coachingforløb med faglige eksperter</li>
+        <li>Events med lokale samarbejdspartnere</li>
+    </ul>
+
+    <div class="card-list">
+        <article class="card">
+            <img src="images/workshops.jpg" alt="Workshops">
+            <h3>Workshops</h3>
+            <a href="#" class="btn-secondary">Læs mere</a>
+        </article>
+
+        <article class="card">
+            <img src="images/coaching.jpg" alt="Coaching">
+            <h3>Coachingforløb</h3>
+            <a href="#" class="btn-secondary">Læs mere</a>
+        </article>
+
+        <article class="card">
+            <img src="images/netværk.jpg" alt="Netværk">
+            <h3>Netværk</h3>
+            <a href="#" class="btn-secondary">Læs mere</a>
+        </article>
+    </div>
 </section>
 
 
@@ -99,6 +116,7 @@
         <p>LinkedIn</p>
     </div>
 
+
     <div class="footer-section">
         <h3>Hurtig links</h3>
         <ul>
@@ -110,20 +128,16 @@
         </ul>
     </div>
 
+
     <div class="footer-section">
         <h3>Praktisk info</h3>
-        <ul>
-            <li>Ofte stillede spørgsmål</li>
+        <ul> <li>Ofte stillede spørgsmål</li>
             <li>Hvordan bliver jeg medlem?</li>
             <li>Hvornår har hubs åbent?</li>
             <li>Faciliteter på Zealand</li>
         </ul>
     </div>
 </footer>
-
-
-
-
 
 </body>
 </html>
